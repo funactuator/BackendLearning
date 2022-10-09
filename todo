@@ -14,3 +14,7 @@
 14. res.write('simple text') --> check elements, how source looks like
 15. res.write('html in strig format')
 16. res.end() it is used to end the connection : I am assuming this. 
+
+
+----Day 02--------------
+1. setup basic routing in http server

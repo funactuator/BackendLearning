@@ -25,6 +25,23 @@ const server = http.createServer((req, res) => {
     //     res.write(fileData);
     //     res.end();
     // })
+    res.setHeader('content-type', 'text/html')
+    let relFilePath = './views'
+    switch(req.url){
+        case '/':
+            relFilePath += '/index.html';
+            break;
+        case '/about':
+            relFilePath += '/aboutUs.html';
+            break;
+        default:
+            relFilePath += '/404.html';
+            break;
+    }
+    fs.readFile(relFilePath, (err, filData) => {
+        res.write(filData);
+        res.end();
+    })
 })
 
 //above code has created server and made the reaction callback but it has not started yet. 
