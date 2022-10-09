@@ -19,4 +19,10 @@
 ----Day 02--------------
 1. setup basic routing in http server
 2. Basic Status code sending through http server
-3. redirection and 3xx status codes
+3. redirection and 3xx status codes\
+
+
+--------Day03 -----------------
+1. Basics about npm
+2. global and local installation of packages
+3. express, nodemon installation
