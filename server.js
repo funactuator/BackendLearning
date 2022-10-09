@@ -30,17 +30,20 @@ const server = http.createServer((req, res) => {
     switch(req.url){
         case '/':
             relFilePath += '/index.html';
+            res.statusCode = 200;
             break;
         case '/about':
             relFilePath += '/aboutUs.html';
+            res.statusCode = 200;
             break;
         default:
             relFilePath += '/404.html';
+            res.statusCode = 404;
             break;
     }
     fs.readFile(relFilePath, (err, filData) => {
         res.write(filData);
-        res.end();
+        res.end()
     })
 })
 
