@@ -1,0 +1,16 @@
+1. create a server and attach callback on it for request event.
+2. callback method would take req and response as its object. This is very conventional naming system
+3. start listening through server, make server online (port number, host, callback for server start)
+4. Note the callback method will only work when you hit the domain on browser after browser is online
+5. try printing request and response object just to see what they are
+6. how to send response to the browser using response object
+7. req object -- two properties --> method(get, post), url --> /, /home, /about etc . url does not include domain name
+8. res.setHeader(), req.write(), req.end()
+9. setHeader tells data type to client which we will be sending --> plain, html, json etc
+10. setHeader('content-type', 'text/html')
+11. setHeader('content-type', 'text/plain')
+12. setHeader('content-type', 'text/json')
+13. write() it is used to send data back to client
+14. res.write('simple text') --> check elements, how source looks like
+15. res.write('html in strig format')
+16. res.end() it is used to end the connection : I am assuming this. 
