@@ -20,11 +20,11 @@ const server = http.createServer((req, res) => {
     // res.end();
 
     // --------------Serving html files----------------
-    fs.readFile('./views/index.html', (err, fileData) => {
-        res.setHeader('content-type', 'text/html');
-        res.write(fileData);
-        res.end();
-    })
+    // fs.readFile('./views/index.html', (err, fileData) => {
+    //     res.setHeader('content-type', 'text/html');
+    //     res.write(fileData);
+    //     res.end();
+    // })
 })
 
 //above code has created server and made the reaction callback but it has not started yet. 
